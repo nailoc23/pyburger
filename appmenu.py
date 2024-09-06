@@ -21,10 +21,10 @@ def menu():
 
 @menu_blueprint.route('/menulist')
 def menulist():
-    # EmployeeModel 인스턴스 생성
+    # MenuModel 인스턴스 생성
     menu_model =  MenuModel(db_config)
 
-    # 직원 데이터 가져오기
+    # 메뉴 데이터 가져오기
     data = menu_model.get_all_menus()
 
     # JSON 응답 생성
